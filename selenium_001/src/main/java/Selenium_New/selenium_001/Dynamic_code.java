@@ -60,19 +60,19 @@ public class Dynamic_code {
 	}
 	
 	//JavaScriptExecutor interface
-	//1 Refresh Method
+	//1 Refresh Method WORKED
 	public static void refresh() {
 		JavascriptExecutor js = (JavascriptExecutor) driver; 
 		js.executeScript("window.history.go(0)");
 	}
 	
-	//2 for go to forward on webpage
+	//2 for go to forward on webpage WORKED
 	    public static void forward() {
 			JavascriptExecutor js5 = (JavascriptExecutor) driver;
 			js5.executeScript("window.history.forward()");
 		}
 		
-	//3 for go to backward on webpage
+	//3 for go to backward on webpage WORKED
 		public static void back() {
 			JavascriptExecutor js4 = (JavascriptExecutor) driver; 
 			js4.executeScript("window.history.back()");
@@ -91,7 +91,7 @@ public class Dynamic_code {
 			}
 }
 	/*	
-	//Action Class
+	Action Class
 		//1 To enter text
 		public static void enter_text(WebElement webelement, String text) {
 		    act.moveToElement(webelement).click().sendKeys(text).build().perform();

@@ -1,0 +1,60 @@
+package Selenium_New.selenium_001;
+
+import java.io.File;
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
+
+import com.google.common.io.Files;
+
+public class Amazon {
+    	  
+  public static void main(String[] args) throws Throwable {
+	
+	WebDriver driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	
+	driver.get("https://www.amazon.in/");
+	System.out.println(driver.getTitle());
+	
+	WebElement Searchbox = driver.findElement(By.cssSelector("input#twotabsearchtextbox"));
+	
+	Searchbox.click();
+	Searchbox.sendKeys("Mobiles");
+	System.out.println("title usig get attribute: " +driver.getTitle());
+	
+	
+	//File screenshot = Searchbox.getScreenshotAs(OutputType.FILE);
+	TakesScreenshot ts = (TakesScreenshot) driver;
+	File source = ts.getScreenshotAs(OutputType.FILE);
+	File target = new File("./screeshot1/serchbox.png");
+	FileHandler.copy(source, target);
+	
+	System.out.println("here we use getAttribute method: "+Searchbox.getAttribute("value"));
+	Thread.sleep(5000);
+	
+	Searchbox.clear();
+	
+	WebElement electronics = driver.findElement(By.id("Electronics"));
+	System.out.println("title electronics: "+driver.getTitle());
+	electronics.click();
+	
+	TakesScreenshot ts1 = (TakesScreenshot) driver;
+	File source1 = ts1.getScreenshotAs(OutputType.FILE);
+	File target1 = new File("./screeshot1/electronics.png");
+	FileHandler.copy(source1, target1);
+	
+	
+	
+	
+	
+}
+	
+}

@@ -16,11 +16,13 @@ public class Automade_chrome {
 	
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	
 		driver.get("https://www.amazon.in/"); // use to hit url
 		System.out.println(driver.getTitle());
 		
-	   // driver.findElement(By.cssSelector("input#twotabsearchtextbox")).click();
+		 // driver.findElement(By.cssSelector("input#twotabsearchtextbox")).click();
 		//System.out.println(driver.getTitle());
+	  
 		//System.out.println(driver.getCurrentUrl()); // this will capture current url of webpage
 		//driver.close(); // it is use to close webpage  //quite() for close multiple tab 
 		
