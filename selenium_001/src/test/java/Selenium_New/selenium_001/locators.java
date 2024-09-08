@@ -32,6 +32,8 @@ public class locators {
 		WebElement becameAseller = driver.findElement(By.linkText("Become a Seller"));
 		becameAseller.click();
 		System.out.println("done 3");
+		
+		//
 
 	}
 
