@@ -37,15 +37,18 @@ public class ScrollPage {
        
         //for backward
         js.executeScript("window.history.back()");
+       // driver.navigate().back();
         System.out.println("back: "+driver.getTitle());
        
         //for forward
         js.executeScript("window.history.forward()");
+       // driver.navigate().forward();
         System.out.println("forward: "+driver.getTitle());
         Thread.sleep(2000);
         
         // for refresh
         js.executeScript("window.history.go(0)");
+       // driver.navigate().refresh();
         System.out.println("refresh: ");
        
         driver.close();
