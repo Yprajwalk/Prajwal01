@@ -33,7 +33,7 @@ public class locators {
 		becameAseller.click();
 		System.out.println("done 3");
 		
-		//
+		driver.close();
 
 	}
 

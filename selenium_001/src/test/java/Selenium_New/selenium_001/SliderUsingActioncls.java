@@ -28,7 +28,7 @@ public class SliderUsingActioncls {
 	 // WebElement Themes = driver.findElement(By.xpath("//a[text()=\"Themes\"]"));
 	 // act.moveToElement(Themes).contextClick().build().perform(); //contextClick() use for right click
      // act.moveToElement(Themes).click().build().perform();
-	 
+	
       	WebElement frame = driver.findElement(By.cssSelector("iframe.demo-frame")); //tagname.classValue
         driver.switchTo().frame(frame); // to enter in frame for move to slider
 	   
@@ -53,6 +53,8 @@ public class SliderUsingActioncls {
 		//act.clickAndHold(Drag).moveToElement(Drop).release().build().perform(); // alternative way to Drag and Drop
 		//act.clickAndHold(Drag).release(Drop).build().perform();
 		//act.dragAndDrop(Drag, Drop).build().perform(); //one more way to drag and drop
+	
+		
 		
 	}
 

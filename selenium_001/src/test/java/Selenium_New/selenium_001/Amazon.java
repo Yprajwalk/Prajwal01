@@ -31,7 +31,6 @@ public class Amazon {
 	System.out.println("title usig get attribute: " +driver.getTitle());
 	
 	
-	//File screenshot = Searchbox.getScreenshotAs(OutputType.FILE);
 	TakesScreenshot ts = (TakesScreenshot) driver;
 	File source = ts.getScreenshotAs(OutputType.FILE);
 	File target = new File("./screeshot1/serchbox.png");
@@ -42,19 +41,11 @@ public class Amazon {
 	
 	Searchbox.clear();
 	
-	WebElement electronics = driver.findElement(By.id("Electronics"));
-	System.out.println("title electronics: "+driver.getTitle());
-	electronics.click();
-	
-	TakesScreenshot ts1 = (TakesScreenshot) driver;
-	File source1 = ts1.getScreenshotAs(OutputType.FILE);
-	File target1 = new File("./screeshot1/electronics.png");
-	FileHandler.copy(source1, target1);
+	//WebElement electronics = driver.findElement(By.id("Electronics"));
+	//System.out.println("title electronics: "+driver.getTitle());
+	//electronics.click();
 	
 	
-	
-	
-	
-}
+	}
 	
 }
