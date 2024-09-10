@@ -24,6 +24,9 @@ public class Amazon {
 	driver.get("https://www.amazon.in/");
 	System.out.println(driver.getTitle());
 	
+	driver.findElement(By.xpath("//a[text()=\"Fashion\"]")).click();
+	
+	/*
 	WebElement Searchbox = driver.findElement(By.cssSelector("input#twotabsearchtextbox"));
 	
 	Searchbox.click();
@@ -40,10 +43,11 @@ public class Amazon {
 	Thread.sleep(5000);
 	
 	Searchbox.clear();
+	*/
+	//    Electronics 
 	
-	//WebElement electronics = driver.findElement(By.id("Electronics"));
-	//System.out.println("title electronics: "+driver.getTitle());
-	//electronics.click();
+//	WebElement fashion = driver.findElement(By.xpath("//a[text()=\"Fashion\"]"));
+//	fashion.click();
 	
 	
 	}

@@ -22,11 +22,8 @@ public class CopyPasteActionCls extends Dynamic_code {
 		act.keyDown(Keys.CONTROL).sendKeys("c").keyUp(Keys.CONTROL).build().perform();
 		
 		act.keyDown(Keys.TAB).build().perform();
-		 //Thread.sleep(2000);
 		act.keyDown(Keys.TAB).build().perform();
-		// Thread.sleep(2000);
 		act.keyDown(Keys.TAB).build().perform();
-		 //Thread.sleep(2000);
 		 
 		act.keyDown(Keys.CONTROL).sendKeys("v").keyUp(Keys.CONTROL).build().perform();
 		//Thread.sleep(2000);
@@ -34,11 +31,6 @@ public class CopyPasteActionCls extends Dynamic_code {
 	    WebElement eye = driver.findElement(By.cssSelector("div#eye"));
 		act.moveToElement(eye).click().build().perform();
 		
-		
-		
-		
-		
-
-	}
+		}
 
 }

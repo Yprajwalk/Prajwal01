@@ -38,7 +38,7 @@ public class Dynamic_code {
 	//For Hit URL
 	public static void hiturl(String url) {
 		driver.get(url);
-		System.out.println(driver.getTitle());
+		System.out.println("Url Title: "+driver.getTitle());
 	}
 
 	//ForScreenshot
