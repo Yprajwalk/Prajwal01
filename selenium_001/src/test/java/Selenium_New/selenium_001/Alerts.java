@@ -34,7 +34,7 @@ public class Alerts extends Dynamic_code {
 	    //okCancleAlert.accept();
 	  
 	    WebElement confirm_Message = driver.findElement(By.cssSelector("p#demo"));
-        System.out.println(""+ confirm_Message.getText());
+        System.out.println("Confirm Mssage"+ confirm_Message.getText());
         
         driver.findElement(By.xpath("(//a[@class=\"analystic\"])[3]")).click();
         Thread.sleep(3000);
@@ -49,7 +49,7 @@ public class Alerts extends Dynamic_code {
         Thread.sleep(3000);
         
         WebElement TextBox = driver.findElement(By.cssSelector("p#demo1"));
-        System.out.println(""+TextBox.getText());
+        System.out.println("Prompt Text : "+TextBox.getText());
         
         
         
