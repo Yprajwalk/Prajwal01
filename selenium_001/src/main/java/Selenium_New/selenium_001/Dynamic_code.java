@@ -45,12 +45,12 @@ public class Dynamic_code {
 	public static void take_screenshot(String screenshot_name) throws Throwable  {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		 File Source1 = ts.getScreenshotAs(OutputType.FILE);
-        File target1 = new File("./Screenshot/"+screenshot_name+".png");
+        File target1 = new File("./GReport/"+screenshot_name+".png");
 		FileHandler.copy(Source1, target1);
 	}
 	
 	//Screenshot Using ProjectPath
-	public static void screenshotprojectpath(String screenshot_Name) throws Throwable {
+	public static void ScreenshotFromPath(String screenshot_Name) throws Throwable {
 		String projectpath = System.getProperty("user.dir");
 		System.out.println(projectpath);
 		TakesScreenshot ts2 = (TakesScreenshot) driver;
