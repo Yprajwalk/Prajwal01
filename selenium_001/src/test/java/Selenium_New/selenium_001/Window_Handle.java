@@ -30,7 +30,7 @@ public class Window_Handle extends Dynamic_code{
 		driver.switchTo().window(child_window_id); //shift the driver control on child window
 		
 		driver.findElement(By.xpath("//a[text()=\"LEARN MORE\"]")).click();
-		driver.navigate().back(); // for get back to privious window
+		driver.navigate().back(); // for get back to privious link not window
 		Thread.sleep(3000);
 		
 		//driver.switchTo().defaultContent(); 

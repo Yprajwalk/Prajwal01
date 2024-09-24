@@ -54,8 +54,6 @@ public class SliderUsingActioncls {
 		//act.clickAndHold(Drag).release(Drop).build().perform();
 		//act.dragAndDrop(Drag, Drop).build().perform(); //one more way to drag and drop
 	
-		
-		
-	}
+		}
 
 }
