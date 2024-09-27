@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-27T19:29:57 IST" name="Default suite" finished-at="2024-09-27T19:29:57 IST" duration-ms="113">
+    <groups>
+    </groups>
+    <test started-at="2024-09-27T19:29:57 IST" name="Default test" finished-at="2024-09-27T19:29:57 IST" duration-ms="113">
+      <class name="TestNG.Define_Two_Parameter">
+        <test-method signature="abc()[pri:0, instance:TestNG.Define_Two_Parameter@7c729a55]" started-at="2024-09-27T19:29:57 IST" name="abc" finished-at="2024-09-27T19:29:57 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abc -->
+        <test-method signature="def()[pri:0, instance:TestNG.Define_Two_Parameter@7c729a55]" started-at="2024-09-27T19:29:57 IST" name="def" finished-at="2024-09-27T19:29:57 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- def -->
+        <test-method signature="ghi()[pri:1, instance:TestNG.Define_Two_Parameter@7c729a55]" started-at="2024-09-27T19:29:57 IST" name="ghi" description="Ghi Method from Two Parameter class" finished-at="2024-09-27T19:29:57 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ghi -->
+        <test-method signature="klm()[pri:2, instance:TestNG.Define_Two_Parameter@7c729a55]" started-at="2024-09-27T19:29:57 IST" name="klm" description="Ghi Method from Two Parameter class" finished-at="2024-09-27T19:29:57 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- klm -->
+      </class> <!-- TestNG.Define_Two_Parameter -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

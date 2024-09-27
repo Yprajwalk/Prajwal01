@@ -20,6 +20,7 @@ public class AutomadeCalender extends Dynamic_code {
       //driver.findElement(By.xpath("(//p[text()=\"26\"])[1]")).click();
       
       int date = 15;
+
       while(true) {
     	  
     	    String month_year = driver.findElement(By.xpath("(//div[@class=\"DayPicker-Caption\"])[2]")).getText();
@@ -34,12 +35,6 @@ public class AutomadeCalender extends Dynamic_code {
       driver.findElement(By.xpath("(//p[text()=\"17\"])[2]")).click();
       System.out.println("Today Is : "+calender.getText());
       
-       
-        
-		
-		
-		
-		
-	}
+       }
 
 }
