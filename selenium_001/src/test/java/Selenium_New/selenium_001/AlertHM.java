@@ -48,8 +48,6 @@ public class AlertHM extends Dynamic_code{
                  System.out.println("prompt:  "+PromptText.getText());
                  
               
-                 
-                 
-	}
+         }
 
 }
